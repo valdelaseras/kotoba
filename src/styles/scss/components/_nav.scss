@@ -1,0 +1,54 @@
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    box-sizing: border-box;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+
+    background-color: palevioletred;
+}
+
+.mobile-menu,
+.branding-logo {
+    height: 50px;
+    width: 50px;
+
+    background-color: pink;
+}
+
+.nav-checkbox {
+    visibility: hidden;
+}
+
+.nav-checkbox:checked + .nav-toggle span {
+    color: red;
+}
+
+.nav-toggle {
+    display: block;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+@media only screen and ( min-width: 768px ) {
+    .nav-list {
+        margin: 0;
+        height: 50px;
+        width: auto;
+
+        background-color: pink;
+    }
+
+    .nav-list > li {
+        display: inline-block;
+        padding: 0 1rem;
+    }
+}

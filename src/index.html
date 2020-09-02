@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kotoba</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="./styles/css/dark-theme.css" title="dark-theme"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="./styles/css/light-theme.css" title="light-theme" disabled />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="./styles/css/index.css"/>
+</head>
+<body>
+    <main>
+        <section tabindex="0" class="section">
+            <div class="section-content">
+                <div class="grid">
+                    <div class="column" id="outlet"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <nav tabindex="0" class="nav">
+        <div class="branding-logo">
+            <span>k</span>
+        </div>
+
+        <ul class="nav-list desktop-only">
+            <li>
+                <a class="nav-link">Progress</a>
+                <!--contains test history scores-->
+                <!--overall progress percentage -->
+                <!--ranking most wrongly answered questions -->
+            </li>
+            <li>
+                <a class="nav-link">Custom lists</a>
+                <!--user custom lists-->
+                <!--create new custom list (manually)-->
+                <!--generate new custom list from 'most wrongly answered questions etc.-->
+
+                <!--display all these custom lists in another instance of Lobby-->
+            </li>
+            <li>
+                <a class="nav-link">Settings</a>
+                <!--theme preference-->
+                <!--clear localstorage, 'deleting account' -->
+            </li>
+        </ul>
+
+        <div class="mobile-menu mobile-only">
+            <input type="checkbox" id="nav-checkbox" class="nav-checkbox">
+            <label for="nav-checkbox" class="nav-toggle">
+                <span>+</span>
+            </label>
+        </div>
+    </nav>
+
+    <footer tabindex="0" class="footer"></footer>
+
+    <script type="module">
+        import AppController from './scripts/AppController.js';
+        new AppController();
+    </script>
+</body>
+</html>

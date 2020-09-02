@@ -1,0 +1,27 @@
+{
+  "name": "kotoba",
+  "version": "1.0.0",
+  "description": "A simple tool to learn and practice Japanese",
+  "main": "index.js",
+  "scripts": {
+    "serve": "http-server --port 8080 -c-1",
+    "sass": "sass src/styles/scss/:src/styles/css/ --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valdelaseras/kotoba.git"
+  },
+  "author": "robin@weird.io",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/valdelaseras/kotoba/issues"
+  },
+  "homepage": "https://github.com/valdelaseras/kotoba#readme",
+  "devDependencies": {
+    "http-server": "^0.12.3"
+  },
+  "dependencies": {
+    "jsdoc": "^3.6.5",
+    "sass": "^1.26.10"
+  }
+}

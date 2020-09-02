@@ -1,0 +1,17 @@
+:root {
+    --large-screen: 768px;
+}
+
+.desktop-only {
+    display: none;
+}
+
+@media only screen and ( min-width: 768px ){
+    .mobile-only {
+        display: none;
+    }
+
+    .desktop-only {
+        display: inline-block;
+    }
+}
